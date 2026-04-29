@@ -98,6 +98,9 @@ git merge upstream/main
 
 # 仅分析单只股票（调试用）
 python main.py --ticker 600519 --date 2024-01-15
+
+# 批量分析沪深300成分股（每次取前10只，避免 API 限流）
+python main.py --index hs300 --limit 10 --delay 5
 ```
 
 ## 贡献指南
