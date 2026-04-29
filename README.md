@@ -87,6 +87,8 @@ TradingAgents-CN/
 | `MONGODB_URI` | MongoDB 连接地址 |
 | `REDIS_URL` | Redis 连接地址 |
 
+> 💡 **个人提示**：使用 DeepSeek 作为 LLM 后端可显著降低 API 成本，在 `.env` 中设置 `LLM_PROVIDER=deepseek` 即可。
+
 ## 贡献指南
 
 欢迎提交 Issue 和 Pull Request！请先阅读 [贡献指南](CONTRIBUTING.md)。
