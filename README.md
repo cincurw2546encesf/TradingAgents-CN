@@ -105,6 +105,9 @@ python main.py --index hs300 --limit 10 --delay 8
 
 # 导出分析结果为 CSV（方便在 Excel 里做二次筛选）
 python main.py --index hs300 --limit 10 --delay 8 --export csv --output ./results/
+
+# 查看某只股票近30天的分析历史记录
+python main.py --ticker 600519 --history --days 30
 ```
 
 ## 贡献指南
