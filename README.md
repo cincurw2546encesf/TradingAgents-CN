@@ -100,7 +100,8 @@ git merge upstream/main
 python main.py --ticker 600519 --date 2024-01-15
 
 # 批量分析沪深300成分股（每次取前10只，避免 API 限流）
-python main.py --index hs300 --limit 10 --delay 5
+# 注意：--delay 从5调整为8，实测8秒间隔在 Tushare 免费账户下更稳定，基本不触发限流
+python main.py --index hs300 --limit 10 --delay 8
 ```
 
 ## 贡献指南
