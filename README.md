@@ -89,6 +89,17 @@ TradingAgents-CN/
 
 > 💡 **个人提示**：使用 DeepSeek 作为 LLM 后端可显著降低 API 成本，在 `.env` 中设置 `LLM_PROVIDER=deepseek` 即可。
 
+## 个人常用命令备忘
+
+```bash
+# 拉取上游最新更新并合并到本地
+git fetch upstream
+git merge upstream/main
+
+# 仅分析单只股票（调试用）
+python main.py --ticker 600519 --date 2024-01-15
+```
+
 ## 贡献指南
 
 欢迎提交 Issue 和 Pull Request！请先阅读 [贡献指南](CONTRIBUTING.md)。
