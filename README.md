@@ -108,6 +108,9 @@ python main.py --index hs300 --limit 10 --delay 8 --export csv --output ./result
 
 # 查看某只股票近30天的分析历史记录
 python main.py --ticker 600519 --history --days 30
+
+# 同步上游标签（偶尔需要，方便对比版本差异）
+git fetch upstream --tags
 ```
 
 ## 贡献指南
