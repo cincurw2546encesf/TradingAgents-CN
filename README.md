@@ -10,6 +10,8 @@
 
 TradingAgents-CN 是 [hsliuping/TradingAgents-CN](https://github.com/hsliuping/TradingAgents-CN) 的 Fork 版本，专为中国 A 股市场优化的多智能体量化交易框架。系统通过多个专业 AI 智能体协同工作，实现市场分析、风险评估和交易决策的自动化。
 
+> 📝 **个人备注**：此 Fork 主要用于个人学习和策略研究，重点关注沪深300成分股的分析场景。
+
 ## 核心特性
 
 - 🧠 **多智能体协作**：分析师、研究员、交易员、风控等多角色智能体
