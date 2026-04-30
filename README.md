@@ -121,6 +121,10 @@ python main.py --cleanup --older-than 30 --dry-run
 
 # 检查当前 MongoDB 中各股票的分析记录数量（快速了解数据积累情况）
 # 在 mongo shell 里执行：db.analysis.aggregate([{$group:{_id:'$ticker',count:{$sum:1}}},{$sort:{count:-1}}])
+
+# 【新增】单独跑回测，验证某段时间区间内的策略表现（--start/--end 均为 YYYY-MM-DD 格式）
+# 加 --benchmark hs300 可以和沪深300指数做对比，直观看超额收益
+python main.py --backtest --ticker 600519 --start 2024-01-01 --end 2024-06-30 --benchmark hs300
 ```
 
 ## 贡献指南
@@ -130,5 +134,4 @@ python main.py --cleanup --older-than 30 --dry-run
 ## 问题反馈
 
 - 🐛 [提交 Bug](https://github.com/your-username/TradingAgents-CN/issues/new?template=bug_report.md)
-- 💡 [功能建议](https://github.com/your-username/TradingAgents-CN/issues/new?template=feature_request.md)
-- 📖 [文档改进](https://github.com/your-username/TradingAgents-CN/issues/new?template=documentation.md)
+- 💡 [功能建议](https://github.com/your-username/TradingAgen
