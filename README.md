@@ -111,6 +111,10 @@ python main.py --ticker 600519 --history --days 30
 
 # 同步上游标签（偶尔需要，方便对比版本差异）
 git fetch upstream --tags
+
+# 清理30天前的旧分析结果，释放磁盘空间（MongoDB 数据量涨得很快）
+# 注意：加 --dry-run 先预览会删哪些，确认没问题再去掉该参数真正执行
+python main.py --cleanup --older-than 30 --dry-run
 ```
 
 ## 贡献指南
