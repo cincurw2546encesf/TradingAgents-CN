@@ -115,6 +115,9 @@ git fetch upstream --tags
 # 清理30天前的旧分析结果，释放磁盘空间（MongoDB 数据量涨得很快）
 # 注意：加 --dry-run 先预览会删哪些，确认没问题再去掉该参数真正执行
 python main.py --cleanup --older-than 30 --dry-run
+
+# 重置本地分支到上游最新状态（慎用！会丢弃本地未提交的修改）
+# git fetch upstream && git reset --hard upstream/main
 ```
 
 ## 贡献指南
@@ -132,5 +135,3 @@ python main.py --cleanup --older-than 30 --dry-run
 > ⚠️ **重要提示**：本项目仅供学习和研究使用，不构成任何投资建议。量化交易存在风险，请谨慎评估后使用。作者不对任何投资损失负责。
 
 ## 许可证
-
-本项目采用 [MIT License](LICENSE) 开源协议。
