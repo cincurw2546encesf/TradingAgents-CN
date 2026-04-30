@@ -32,11 +32,13 @@ PACKAGE_NAME = "tradingagents-cn"
 PACKAGE_DESCRIPTION = "Multi-agent LLM framework for trading analysis with Chinese market support"
 
 # Supported markets
+# Note: added 'futures' for personal use with commodity futures analysis
 SUPPORTED_MARKETS = [
-    "cn",   # Chinese A-shares (Shanghai/Shenzhen)
-    "hk",   # Hong Kong stocks
-    "us",   # US stocks
+    "cn",      # Chinese A-shares (Shanghai/Shenzhen)
+    "hk",      # Hong Kong stocks
+    "us",      # US stocks
     "crypto",  # Cryptocurrency
+    "futures", # Commodity futures (SHFE, DCE, CZCE)
 ]
 
 # Supported LLM providers
