@@ -126,7 +126,7 @@ python main.py --cleanup --older-than 30 --dry-run
 # 加 --benchmark hs300 可以和沪深300指数做对比，直观看超额收益
 python main.py --backtest --ticker 600519 --start 2024-01-01 --end 2024-06-30 --benchmark hs300
 
-# 【新增】批量回测沪深300前20只股票，结果汇总到同一个 CSV 文件
-# --delay 建议设 10，回测本身不调 Tushare 实时接口，但初始化数据拉取还是会触发限流
-python main.py --backtest --index hs300 --limit 20 --delay 10 --export csv --output ./backtest_results/
+# 【新增】批量回测沪深300前20只股票，结果汇总到同一个 CSV
+# 注意：回测比较吃内存，20只以上建议分批跑，或者在服务器上跑
+python main.py --backtest --index hs300 --limit 20 --start 2024-01-01 --end 2024-06-30 --benchmark hs300 --export csv --output ./backtest_results/
 ```
